@@ -1,0 +1,2 @@
+Flight1,Airline1,New York,NYC,08:00,12:00,4,150.0
+Flight2,Airline2,Los Angeles,LAX,14:30,17:30,3,90.0
