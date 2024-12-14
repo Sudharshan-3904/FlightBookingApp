@@ -1,5 +1,5 @@
-AA101, American Airlines, New York, Los Angeles, 08:00 AM, 11:00 AM, 6.00, 300.50, 9, 1
-DL202, Delta Airlines, Chicago, Miami, 09:00 AM, 01:00 PM, 4.00, 200.75, 15, 0
+AA101, American Airlines, New York, Los Angeles, 08:00 AM, 11:00 AM, 6.00, 300.50, 7, 3
+DL202, Delta Airlines, Chicago, Miami, 09:00 AM, 01:00 PM, 4.00, 200.75, 14, 1
 UA303, United Airlines, San Francisco, Seattle, 07:00 AM, 09:00 AM, 2.00, 150.00, 5, 0
 SW404, Southwest Airlines, Dallas, Denver, 06:30 AM, 08:30 AM, 2.00, 120.00, 20, 0
 BA505, British Airways, Boston, London, 10:00 PM, 10:00 AM, 7.00, 500.00, 8, 0

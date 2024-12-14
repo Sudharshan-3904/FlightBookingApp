@@ -1,0 +1,11 @@
+
+======================== FLIGHT TICKET =========================
+| Flight No: AA101                                              |
+| Airline: American Airlines                                    |
+| Origin: New York                                              |
+| Destination: Los Angeles                                      |
+| Departure: 08:00 AM                                           |
+| Arrival: 11:00 AM                                             |
+| Flight Hours: 6.00                                            |
+| Price: $300.50                                                |
+================================================================

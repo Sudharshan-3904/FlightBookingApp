@@ -180,12 +180,27 @@ void printFlightTicket() {
     }
 
     Flight *ticket = &bookedFlights[choice - 1];
-    printf("\n--- Flight Ticket ---\n");
-    printf("Flight No: %s\nAirline: %s\nOrigin: %s\nDestination: %s\nDeparture: %s\nArrival: %s\nFlight Hours: %.2f\nPrice: $%.2f\n",
-           ticket->flightNo, ticket->airline, ticket->origin, ticket->destination,
-           ticket->departureTime, ticket->arrivalTime, ticket->flightHours,
-           ticket->price);
-    printf("---------------------\n");
+
+    FILE *file = fopen("TicketPrint.txt", "w");
+    if (!file) {
+        printf("Error: Could not open file TicketPrint.txt\n");
+        return;
+    }
+
+    fprintf(file, "\n======================== FLIGHT TICKET =========================\n");
+    fprintf(file, "| Flight No: %-50s |\n", ticket->flightNo);
+    fprintf(file, "| Airline: %-52s |\n", ticket->airline);
+    fprintf(file, "| Origin: %-53s |\n", ticket->origin);
+    fprintf(file, "| Destination: %-48s |\n", ticket->destination);
+    fprintf(file, "| Departure: %-50s |\n", ticket->departureTime);
+    fprintf(file, "| Arrival: %-52s |\n", ticket->arrivalTime);
+    fprintf(file, "| Flight Hours: %-47.2f |\n", ticket->flightHours);
+    fprintf(file, "| Price: $%-53.2f |\n", ticket->price);
+    fprintf(file, "================================================================\n");
+
+    fclose(file);
+
+    printf("Flight ticket has been printed to TicketPrint.txt\n");
 }
 
 int main() {
